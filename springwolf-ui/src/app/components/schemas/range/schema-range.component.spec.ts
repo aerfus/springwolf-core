@@ -19,7 +19,7 @@ describe("SchemaRangeComponent", function () {
     expect(component).toBeTruthy();
   });
 
-  it("should have `( 0.1 .. 10 )` as value", async () => {
+  it('#schema should set #value to "( 0.1 .. 10 )"', async () => {
     component.schema = {
       title: "test",
       minimum: 0.1,
@@ -35,7 +35,7 @@ describe("SchemaRangeComponent", function () {
     );
   });
 
-  it("should have `[ 0.1 .. 10 )` as value", async () => {
+  it('#schema should set #value to "[ 0.1 .. 10 )"', async () => {
     component.schema = {
       title: "test",
       minimum: 0.1,
@@ -51,7 +51,7 @@ describe("SchemaRangeComponent", function () {
     );
   });
 
-  it("should have `( 0.1 .. 10 ]` as value", async () => {
+  it('#schema should set #value to "( 0.1 .. 10 ]"', async () => {
     component.schema = {
       title: "test",
       minimum: 0.1,
@@ -67,7 +67,7 @@ describe("SchemaRangeComponent", function () {
     );
   });
 
-  it("should have `[ 0.1 .. 10 ]` as value", async () => {
+  it('#schema should set #value to "[ 0.1 .. 10 ]"', async () => {
     component.schema = {
       title: "test",
       minimum: 0.1,
@@ -81,7 +81,7 @@ describe("SchemaRangeComponent", function () {
     );
   });
 
-  it("should have `> 0.1` as value", async () => {
+  it('#schema should set #value to "> 0.1"', async () => {
     component.schema = {
       title: "test",
       minimum: 0.1,
@@ -93,7 +93,7 @@ describe("SchemaRangeComponent", function () {
     expect(compiled.querySelector("span").textContent).toContain("> 0.1");
   });
 
-  it("should have `< 10` as value", async () => {
+  it('#schema should set #value to "< 10"', async () => {
     component.schema = {
       title: "test",
       maximum: 10,
@@ -105,7 +105,7 @@ describe("SchemaRangeComponent", function () {
     expect(compiled.querySelector("span").textContent).toContain("< 10");
   });
 
-  it("should have `>= 0.1` as value", async () => {
+  it('#schema should set #value to ">= 0.1"', async () => {
     component.schema = {
       title: "test",
       minimum: 0.1,
@@ -116,7 +116,7 @@ describe("SchemaRangeComponent", function () {
     expect(compiled.querySelector("span").textContent).toContain(">= 0.1");
   });
 
-  it("should have `<= 10` as value", async () => {
+  it('#schema should set #value to "<= 10"', async () => {
     component.schema = {
       title: "test",
       maximum: 10,
